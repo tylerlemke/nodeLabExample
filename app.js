@@ -52,7 +52,7 @@ app.post('/petForm', function(req, res){
 });
 
 app.post('/petForm', function(req, res){
-    res.send(capitalize(req.body.newPet));
+    res.send(tools.capitalize(req.body.newPet));
     console.log(tools.capitalize(req.body.newPet));
 })
 app.get('/', function(req, res){

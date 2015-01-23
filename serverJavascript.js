@@ -4,6 +4,6 @@ exports.stringLength = function(str){
     return str.length;
 };
 
-exports.colorize(str, ) = function(str){
+exports.capitalize = function(str){
     return capitalize(str);
 };
