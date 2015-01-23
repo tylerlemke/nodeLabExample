@@ -29,7 +29,7 @@ var returnKittens = function(){
     return "kittens";
 };
 
-/**Takes two arguments and returns their product.*/
+/**Takes two arguments and returns their sum.*/
 var myNumber = function(p1, p2){
-    return p1 * p2;
+    return p1 + p2;
 }
