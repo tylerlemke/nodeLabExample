@@ -50,10 +50,10 @@ app.get('/gpaCalc', function(req, res){
     res.sendFile('gpaCalc.html', options);
 });
 
-app.get('/gpaCalc', function(req, res){
-    res.send(gpaCalc(body.Credits1, body.Credits2, body.Credits3, body.LetterGrade1, body.LetterGrade2, body.LetterGrade3 ));
+app.post('/gpaCalc', function(req, res){
+    res.send( "Total GPA is " + tools.gpaCalc(body.Credits1, body.Credits2, body.Credits3, body.LetterGrade1, body.LetterGrade2, body.LetterGrade3 ));
 
-})
+});
 
 app.post('/petForm', function(req, res){
     res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
@@ -63,7 +63,7 @@ app.post('/petForm', function(req, res){
 app.post('/petForm', function(req, res){
     res.send(tools.capitalize(req.body.newPet));
     console.log(tools.capitalize(req.body.newPet));
-})
+});
 app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
