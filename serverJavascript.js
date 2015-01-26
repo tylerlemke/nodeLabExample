@@ -5,5 +5,5 @@ exports.stringLength = function(str){
 };
 
 exports.capitalize = function(str){
-    return capitalize(str);
+    return str.toUpperCase();
 };

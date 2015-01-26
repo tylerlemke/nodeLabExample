@@ -10,12 +10,12 @@ describe('testing basic functions', function(){
     });
 
     //this test should fail.
-    it('this test should fail!', function(){
-        expect(returnKittens()).toBe("Not Kittens!");
-    });
+//    it('this test should fail!', function(){
+//        expect(returnKittens()).toBe("Not Kittens!");
+//    });
 
-    it('myNumber should return the correct product', function(){
-        expect(myNumber(3,4)).toBe(12);
+    it('myNumber should return the correct sum', function(){
+        expect(myNumber(3,4)).toBe(7);
     });
 });
 
