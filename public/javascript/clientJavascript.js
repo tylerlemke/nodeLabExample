@@ -34,7 +34,7 @@ var returnKittens = function(){
 var myNumber = function(p1, p2){
     return p1 + p2;
 }
-
+/**Takes a letter grade and converts it to a grade point*/
 var convertToGradePoint = function(l1){
     if (l1 == "A"){
     return 4;}
@@ -51,10 +51,11 @@ var convertToGradePoint = function(l1){
         return 0;
     }
 }
-
+/**takes a grade point number and the total number of credits it was worth and returns the total number of grade points*/
 var convertToTotalGradePoint = function(l1, c1){
     return Number(convertToGradePoint(l1)) * Number(c1);
 }
 
+/**Takes three letter grades and there respective credit worth and calculates the total GPA*/
 var gpaCalc = function(c1, c2, c3, l1, l2, l3){
     return  (convertToTotalGradePoint(l1,c1) + convertToTotalGradePoint(l2,c2)+ convertToTotalGradePoint(l3,c3) )/(Number(c1) + Number(c2) + Number(c3));}

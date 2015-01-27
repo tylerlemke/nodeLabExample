@@ -9,17 +9,12 @@ describe('testing basic functions', function(){
         expect(returnKittens()).toBe("kittens");
     });
 
-    //this test should fail.
-//    it('this test should fail!', function(){
-//        expect(returnKittens()).toBe("Not Kittens!");
-//    });
 
     it('myNumber should return the correct sum', function(){
         expect(myNumber(3,4)).toBe(7);
     });
 
-
-
+//tests for the converting letter grades to grade points
     it('should return correct grade point', function(){
         expect(convertToGradePoint('A')).toBe(4);
     });
@@ -35,11 +30,17 @@ describe('testing basic functions', function(){
     it('should return correct grade point', function(){
         expect(convertToGradePoint("D")).toBe(1);
     });
-BOb
+
     it('should return correct grade point', function(){
         expect(convertToGradePoint("F")).toBe(0);
     });
 
+//test for calculating Total Grade points for an individual class
+    it('should return correct total grade points', function(){
+        expect(convertToTotalGradePoint("A",4)).toBe(16);
+    })
+
+//test for calculating total GPA
     it('should return correct GPA', function(){
         expect(gpaCalc(5,4,3,"A","B","C")).toBe(3.16666666666666665);
     })
