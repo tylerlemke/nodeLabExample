@@ -51,7 +51,7 @@ app.get('/gpaCalc', function(req, res){
 });
 
 app.post('/gpaCalc', function(req, res){
-    res.send( "Total GPA is " + tools.gpaCalc(req.body.Credits1, req.body.Credits2, req.body.Credits3, req.body.LetterGrade1, req.body.LetterGrade2, req.body.LetterGrade3 ));
+res.send( "Total GPA is " + tools.gpaCalc(req.body.Credits1, req.body.Credits2, req.body.Credits3, req.body.LetterGrade1, req.body.LetterGrade2, req.body.LetterGrade3 ));
 
 });
 

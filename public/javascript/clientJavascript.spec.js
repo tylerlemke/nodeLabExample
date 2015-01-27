@@ -35,7 +35,7 @@ describe('testing basic functions', function(){
     it('should return correct grade point', function(){
         expect(convertToGradePoint("D")).toBe(1);
     });
-
+BOb
     it('should return correct grade point', function(){
         expect(convertToGradePoint("F")).toBe(0);
     });

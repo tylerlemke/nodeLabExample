@@ -29,5 +29,5 @@ var convertToTotalGradePoint = function(l1, c1){
     return Number(convertToGradePoint(l1)) * Number(c1);
 }
 
-var gpaCalc = function(c1, c2, c3, l1, l2, l3){
+exports.gpaCalc = function(c1, c2, c3, l1, l2, l3){
     return  (convertToTotalGradePoint(l1,c1) + convertToTotalGradePoint(l2,c2)+ convertToTotalGradePoint(l3,c3) )/(Number(c1) + Number(c2) + Number(c3));}
