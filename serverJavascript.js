@@ -8,22 +8,22 @@ exports.capitalize = function(str){
     return str.toUpperCase();
 };
 
-exports.convertToGradePoint = function(l1){
-    if (l1 = "A"){
-        return 4;}
-    if (l1 = "B"){
-        return 3;
-    }
-    if (l1 = "C"){
-        return 2;
-    }
-    if (l1 = "D"){
-        return 1;
-    }
-    if (l1 = "F"){
-        return 0;
-    }
-}
+var convertToGradePoint = function(l1){
+    var x;
+    if (l1= "A"){
+    x=4;}
+    else if(l1= "B"){
+        x=3;}
+    else if(l1= "C"){
+        x=2;}
+    else if(l1= "D"){
+        x=1;}
+    else if(l1= "F"){
+        x=0;}
+    return x;
 
+
+
+}
 exports.gpaCalc = function(c1, c2, c3, l1, l2, l3){
-    return  (convertToGradePoint(l1) + convertToGradePoint(l2)+ convertToGradePoint(l3) )/(c1 + c2 + c3);}
+    return (convertToGradePoint(l1) + convertToGradePoint(l2)+ convertToGradePoint(l3) )/(Number(c1) + Number(c2) + Number(c3));}

@@ -17,5 +17,27 @@ describe('testing basic functions', function(){
     it('myNumber should return the correct sum', function(){
         expect(myNumber(3,4)).toBe(7);
     });
+
+
+
+    it('should return correct grade point', function(){
+        expect(convertToGradePoint('A')).toBe(4);
+    });
+
+    it('should return correct grade point', function(){
+        expect(convertToGradePoint("B")).toBe(4);
+    });
+
+    it('should return correct grade point', function(){
+        expect(convertToGradePoint("C")).toBe(4);
+    });
+
+    it('should return correct grade point', function(){
+        expect(convertToGradePoint("D")).toBe(4);
+    });
+
+    it('should return correct grade point', function(){
+        expect(convertToGradePoint("F")).toBe(4);
+    });
 });
 
