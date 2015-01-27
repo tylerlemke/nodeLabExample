@@ -25,19 +25,19 @@ describe('testing basic functions', function(){
     });
 
     it('should return correct grade point', function(){
-        expect(convertToGradePoint("B")).toBe(4);
+        expect(convertToGradePoint("B")).toBe(3);
     });
 
     it('should return correct grade point', function(){
-        expect(convertToGradePoint("C")).toBe(4);
+        expect(convertToGradePoint("C")).toBe(2);
     });
 
     it('should return correct grade point', function(){
-        expect(convertToGradePoint("D")).toBe(4);
+        expect(convertToGradePoint("D")).toBe(1);
     });
 
     it('should return correct grade point', function(){
-        expect(convertToGradePoint("F")).toBe(4);
+        expect(convertToGradePoint("F")).toBe(0);
     });
 });
 
