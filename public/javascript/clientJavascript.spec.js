@@ -25,7 +25,7 @@ describe('testing basic functions', function(){
     });
 
     it('should return correct grade point', function(){
-        expect(convertToGradePoint("B")).toBe(3);
+        expect(convertToGradePoint('B')).toBe(3);
     });
 
     it('should return correct grade point', function(){
@@ -39,5 +39,9 @@ describe('testing basic functions', function(){
     it('should return correct grade point', function(){
         expect(convertToGradePoint("F")).toBe(0);
     });
+
+    it('should return correct GPA', function(){
+        expect(gpaCalc(5,4,3,"A","B","C")).toBe(3.16666666666666665);
+    })
 });
 
